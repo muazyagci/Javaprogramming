@@ -27,7 +27,7 @@ public class Car {
                 ", model='" + model + '\'' +
                 ", colour='" + colour + '\'' +
                 ", year=" + year +
-                ", price=" + price +
+                ", price=€" + price +
                 ", Km=" + miles +
                 '}';
     }
