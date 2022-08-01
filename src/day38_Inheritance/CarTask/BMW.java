@@ -13,13 +13,13 @@ public class BMW extends Car{
 
     @Override
     public void start() {
-        super.start();
+
         System.out.println("har har har har");
     }
 
     @Override
     public void drive() {
-        super.drive();
+
         System.out.println("Call someone for jump start");
     }
 }
