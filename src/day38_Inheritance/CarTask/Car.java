@@ -28,10 +28,10 @@ public class Car {
                 ", colour='" + colour + '\'' +
                 ", year=" + year +
                 ", price=" + price +
-                ", miles=" + miles +
+                ", Km=" + miles +
                 '}';
     }
-    
+
 }
 
 

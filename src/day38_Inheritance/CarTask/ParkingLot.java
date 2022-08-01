@@ -9,7 +9,7 @@ public class ParkingLot {
         System.out.println(tesla);
 
         BMW bmw=new BMW("116","White",2019,19000,26000);
-
+        System.out.println(bmw);
 
 
     }
