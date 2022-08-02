@@ -1,6 +1,6 @@
 package day39_Recaps.CydeoTask;
 
-public class Employee {
+public class Employee extends Person{
     private long ID;
     private String jobTitle;
     private double salary;
@@ -42,6 +42,30 @@ public class Employee {
         }
 
         this.salary = salary;
+    }
+
+    public Employee(String name, char gender, int age, long ID, String jobTitle, double salary) {
+        super(name, gender, age);
+        setID(ID);
+        setJobTitle(jobTitle);
+        setSalary(salary);
+    }
+
+    public void word(){
+        System.out.println(getName()+" is working.");
+    }
+
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                " name='" + getName() + '\'' +
+                ", gender=" + getGender() +
+                ", age=" + getAge() +
+                " ID=" + ID +
+                ", jobTitle='" + jobTitle + '\'' +
+                ", salary=" + salary +
+                '}';
     }
 
 }
