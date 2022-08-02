@@ -29,5 +29,14 @@ public class Student extends Person {
         System.out.println(getName()+" is studying");
     }
 
+    public String toString() {
+        return "Student{" +
+                "name='" + getName() + '\'' +
+                ", gender=" + getGender() +
+                ", age=" + getAge() +
+                "studentID=" + studentID +
+                ", fieldOfStudy='" + fieldOfStudy + '\'' +
+                '}';
+    }
 }
 
