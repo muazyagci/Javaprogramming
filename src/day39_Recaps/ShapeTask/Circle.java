@@ -3,7 +3,7 @@ package day39_Recaps.ShapeTask;
 public class Circle extends Shape{
 
     private double radius;
-    public static double pi;
+    public static double pi=3.14;
 
     public double getRadius() {
         return radius;
@@ -26,8 +26,23 @@ public class Circle extends Shape{
 
     }
 
-    static {
-pi=3.14;
+    @Override
+    public double area() {
+        return radius*radius*pi;
+    }
+
+    @Override
+    public double perimeter() {
+        return 2*radius*pi;
+    }
+
+    public String toString() {
+        return "Circle{" +
+                "radius=" + radius +
+                "pi=" + pi +
+                "area=" + area() +
+                "perimeter=" + perimeter() +
+                '}';
     }
 
 }
