@@ -11,12 +11,7 @@ public class Shape {
         this.name = name;
     }
 
-    public double area(){
-        return 0;
-    }
-    public double perimeter(){
-        return 0;
-    }
+
 
     public Shape(String name) {
         if (name==null){
@@ -32,6 +27,13 @@ public class Shape {
 
         setName(name);
 
+    }
+
+    public double area(){
+        return 0;
+    }
+    public double perimeter(){
+        return 0;
     }
 
     @Override
