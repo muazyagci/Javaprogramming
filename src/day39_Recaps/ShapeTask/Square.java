@@ -1,10 +1,24 @@
 package day39_Recaps.ShapeTask;
 
 public class Square extends Shape{
-    public double side;
-    public Square(String name,double side) {
+    private double side;
+
+    public double getSide() {
+        return side;
+    }
+
+    public void setSide(double side) {
+        if (side<=0){
+            System.err.println("Invalid Side: "+side);
+            System.exit(1);
+        }
+
+        this.side = side;
+    }
+
+    public Square(String name, double side) {
         super(name);
-        this.side=side;
+        setSide(side);
     }
 
     @Override
@@ -27,4 +41,5 @@ public class Square extends Shape{
                 '}';
 
     }
+
 }
