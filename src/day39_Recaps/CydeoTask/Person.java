@@ -49,4 +49,11 @@ public class Person {
         this.age = age;
     }
 
+    public Person(String name, char gender, int age) {
+       setName(name);
+       setGender(gender);
+       setAge(age);
+    }
+
+
 }
