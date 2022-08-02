@@ -55,5 +55,21 @@ public class Person {
        setAge(age);
     }
 
+    public void eat(String food){
+        System.out.println(getName()+" is eating "+food);
+    }
+    public void drink(String drink){
+        System.out.println(getName()+" is drinking "+drink);
+    }
+    public void sleep(){
+        System.out.println(getName()+" is sleeping");
+    }
 
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", gender=" + gender +
+                ", age=" + age +
+                '}';
+    }
 }
