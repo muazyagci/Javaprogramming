@@ -6,7 +6,11 @@ public class Tester extends Employee{
     }
 
     public void createTicket(){
-        System.out.println(getName()+" has created a ticket");
+        System.out.println(getJobTitle()+" "+getName()+" is creating");
     }
 
+    @Override
+    public void work() {
+        super.work();
+    }
 }

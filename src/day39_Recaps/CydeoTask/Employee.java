@@ -51,7 +51,7 @@ public class Employee extends Person{
         setSalary(salary);
     }
 
-    public void word(){
+    public void work(){
         System.out.println(getName()+" is working.");
     }
 
