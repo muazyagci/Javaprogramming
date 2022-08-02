@@ -20,7 +20,7 @@ public class Square extends Shape{
     @Override
     public String toString() {
         return "Shape{" +
-                "name='" + name + '\'' +
+                "name='" + getName() + '\'' +
                 "side='" + side + '\'' +
                 "area='" + area() + '\'' +
                 "perimeter='" + perimeter() + '\'' +
