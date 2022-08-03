@@ -16,4 +16,44 @@ public class Animal {
         this.size = size;
         this.age = age;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getBreed() {
+        return breed;
+    }
+
+    public char getGender() {
+        return gender;
+    }
+
+    public String getColour() {
+        return colour;
+    }
+
+    public String getSize() {
+        return size;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    //----------Setters-------------------
+
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSize(String size) {
+        this.size = size;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
 }
