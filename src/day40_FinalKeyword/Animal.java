@@ -2,11 +2,16 @@ package day40_FinalKeyword;
 
 public class Animal {
     private String name;
-    final private String breed;
+     private final String breed;
     final private char gender;
     private final String colour;
     private String size;
     private int age;
+
+//    public void setBreed(String breed){
+//        this.breed=breed;
+//    }
+
 
     public Animal(String name, String breed, char gender, String colour, String size, int age) {
         this.name = name;
@@ -43,17 +48,12 @@ public class Animal {
 
     //----------Setters-------------------
 
-
-    public void setName(String name) {
-        this.name = name;
+    public void eat(){
+        System.out.println(name+" is eating");
+    }
+    public final void drink(){
+        System.out.println(name+" is drinking water");
     }
 
-    public void setSize(String size) {
-        this.size = size;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
 
 }
