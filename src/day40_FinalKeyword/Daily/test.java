@@ -23,7 +23,6 @@ while (a){
 
         account.userName= scan.next();
         account.passWord= scan.next();
-
     }
 
 }
