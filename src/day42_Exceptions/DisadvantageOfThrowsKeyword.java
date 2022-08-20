@@ -3,7 +3,16 @@ package day42_Exceptions;
 public class DisadvantageOfThrowsKeyword {
     public static void main(String[] args) {
 
+        System.out.println("Hello");
+        sleep(10);
+        System.out.println("World");
+        System.out.println("--------------------");
 
+        System.out.println("Hello");
+
+        MorningWorkout.sleep(10);
+
+        System.out.println("Cydeo");
 
     }
     public static void sleep(double seconds) throws InterruptedException {
