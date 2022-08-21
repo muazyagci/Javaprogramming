@@ -20,5 +20,12 @@ public class CustomExceptions {
     public static void main(String[] args) {
         throw new FadyException("It's time for short break");
 
+
+//        try {
+//            throw new NoBreakException();
+//        } catch (NoBreakException e) {
+//            e.printStackTrace();
+//        }
+
     }
 }
