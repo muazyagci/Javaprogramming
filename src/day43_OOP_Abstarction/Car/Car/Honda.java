@@ -12,6 +12,9 @@ public class Honda extends Car {
         System.out.println("Twist the key to ignition.");
     }
 
-
+    @Override
+    public void stop() {
+        System.out.println("");
+    }
 
 }

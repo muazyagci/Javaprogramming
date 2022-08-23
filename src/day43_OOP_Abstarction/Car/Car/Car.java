@@ -50,10 +50,10 @@ public abstract class Car {
     public abstract void start();
 
 
-    public void stop(){
-        System.out.println("Press the brake");
+    public abstract void stop();
 
-    }
+
+
 
 
     public String toString() {
