@@ -55,6 +55,18 @@ public abstract class Car {
 
     }
 
+
+    public String toString() {
+        return "Car{" +
+                "make='" + make + '\'' +
+                ", model='" + model + '\'' +
+                ", colour='" + colour + '\'' +
+                ", price= €" + price +
+                ", year=" + year +
+                '}';
+    }
+
+
 }
 
 
