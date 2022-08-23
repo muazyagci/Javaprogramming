@@ -50,7 +50,10 @@ public abstract class Car {
     public abstract void start();
 
 
-    public abstract void stop();
+    public  void stop(){
+        System.out.println("Press the break");
+    }
+
 
 
 
