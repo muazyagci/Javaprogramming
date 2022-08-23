@@ -1,6 +1,7 @@
 package day43_OOP_Abstarction.Car.Car;
 
 public abstract class Car {
+
     private final String make,model;
     private String colour;
     private double price;

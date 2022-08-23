@@ -1,6 +1,6 @@
 package day43_OOP_Abstarction.Car.Car;
 
-public class Honda extends Car {
+public final class Honda extends Car {
 
     public Honda(String make, String model, String colour, double price, int year) {
         super(make, model, colour, price, year);
@@ -9,7 +9,12 @@ public class Honda extends Car {
 
     @Override
     public void start() {
-        System.out.println("Twist the key to ignition.");
+        System.out.println("Say\" start\"");
+    }
+
+
+    public void autoPilot(){
+        System.out.println(getMake()+" "+getModel()+" has auto pilot feature");
     }
 
 
