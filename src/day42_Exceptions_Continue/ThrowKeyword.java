@@ -1,4 +1,4 @@
-package day42_Exceptions;
+package day42_Exceptions_Continue;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 public class ThrowKeyword {

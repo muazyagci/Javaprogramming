@@ -11,6 +11,7 @@ public class GradeReport {
  */
 int score=85;
 
+
 boolean a=score>=90&&score<=100;
 //boolean b=score>=80&&!a;
 boolean b=score>=80&&score<=89;
