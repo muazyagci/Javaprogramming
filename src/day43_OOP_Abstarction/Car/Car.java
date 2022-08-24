@@ -1,4 +1,4 @@
-package day43_OOP_Abstarction.Car.Car;
+package day43_OOP_Abstarction.Car;
 
 public abstract class Car {
 
