@@ -1,0 +1,61 @@
+package day44_Abstraction;
+
+public class Animal {
+    private String name;
+    private final String breed;
+    private final char gender;
+    private int age;
+    private String size;
+    private final String colour;
+
+    public final static boolean canBreath = true;
+
+
+    public Animal(String name, String breed, char gender, int age, String size, String colour) {
+        setName(name);
+        this.breed = breed;
+        this.gender = gender;
+        setAge(age);
+        setSize(size);
+        this.colour = colour;
+    }
+
+    public String getName() {
+        if (name.isEmpty()){
+            throw new RuntimeException("Invalid name");
+        }else return name;
+
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getBreed() {
+        return breed;
+    }
+
+    public char getGender() {
+        return gender;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getSize() {
+        return size;
+    }
+
+    public void setSize(String size) {
+        this.size = size;
+    }
+
+    public String getColour() {
+        return colour;
+    }
+}
