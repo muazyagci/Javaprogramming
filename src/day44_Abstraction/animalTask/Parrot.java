@@ -7,7 +7,7 @@ public class Parrot extends Animal{
 
     @Override
     public void eat() {
-
+        System.out.println(getName()+" is eating chocolate");
     }
 
 }

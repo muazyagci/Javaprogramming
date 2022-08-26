@@ -7,7 +7,7 @@ public class Tiger extends Animal{
 
     @Override
     public void eat() {
-
+        System.out.println(getName()+ "is eating deer");
     }
 
 }
