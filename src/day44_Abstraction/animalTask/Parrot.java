@@ -12,6 +12,9 @@ public class Parrot extends Animal  implements Playable{
 
     @Override
     public void play() {
-
+        System.out.println(getName()+" is playing with rope");
     }
+
+
+
 }
