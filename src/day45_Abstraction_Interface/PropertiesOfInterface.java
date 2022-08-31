@@ -1,6 +1,8 @@
 package day45_Abstraction_Interface;
 
-public interface PropertiesOfInterface {
+
+
+public interface PropertiesOfInterface  {
    int a=100;//static and final by default
     static  int b=200;//final by default
 //    public PropertiesOfInterface(int a){
@@ -20,8 +22,12 @@ public interface PropertiesOfInterface {
     public abstract void method3();
 
 
-    public default void method4(){
+    public default void method(){
         System.out.println("Default method");
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Hello");
     }
 
 
