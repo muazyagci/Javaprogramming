@@ -11,10 +11,10 @@ public class TryCatchBlocks {
         System.out.println("Test Started");
 
         try {
-
+            System.out.println("Try Block");
             System.out.println(9 / 0);
 
-            System.out.println("Try Block");
+
 
         } catch (ArithmeticException e) {
 

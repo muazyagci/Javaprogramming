@@ -3,7 +3,7 @@ package day41_Exceptions;
 import day39_Recaps.CydeoTask.Employee;
 
 public class MultiCatchBLocks {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         Employee employee = null;
 
@@ -34,6 +34,7 @@ public class MultiCatchBLocks {
         }
         System.out.println("Done");
 
+        Thread.sleep(5000);
 
     }
 }
