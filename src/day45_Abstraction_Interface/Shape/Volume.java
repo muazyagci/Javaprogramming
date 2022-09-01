@@ -5,6 +5,10 @@ public interface Volume {
     boolean hasVolume=true;
 
     double volume();
+/*
+   default void drink(){
 
+   }
 
+ */
 }
