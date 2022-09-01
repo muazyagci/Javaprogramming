@@ -1,6 +1,6 @@
 package day45_Abstraction_Interface.Shape;
 
-public class Cylinder extends Shape {
+public class Cylinder extends Shape implements Volume {
     @Override
     public double area() {
         return 0;
@@ -13,5 +13,10 @@ public class Cylinder extends Shape {
 
     public Cylinder(String name) {
         super(name);
+    }
+
+    @Override
+    public double volume() {
+        return 0;
     }
 }

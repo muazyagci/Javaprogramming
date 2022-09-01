@@ -1,6 +1,6 @@
 package day45_Abstraction_Interface.Shape;
 
-public class Sphere extends Shape{
+public class Sphere extends Shape implements Volume{
     public Sphere(String name) {
         super(name);
     }
@@ -15,4 +15,8 @@ public class Sphere extends Shape{
         return 0;
     }
 
+    @Override
+    public double volume() {
+        return 0;
+    }
 }
