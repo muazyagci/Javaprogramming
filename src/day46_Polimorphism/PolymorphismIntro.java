@@ -1,4 +1,7 @@
-package day45_Abstraction_Interface.Shape;
+package day46_Polimorphism;
+
+import day45_Abstraction_Interface.Shape.Circle;
+import day45_Abstraction_Interface.Shape.Square;
 
 import java.util.Arrays;
 
@@ -14,6 +17,7 @@ public class PolymorphismIntro {
 
        Object[] array={str,n1,b2,r1,new Circle(4),new Square(4)};
         System.out.println(Arrays.asList(array));
+
 
     }
 }
