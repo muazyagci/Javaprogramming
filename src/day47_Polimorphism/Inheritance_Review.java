@@ -1,6 +1,6 @@
 package day47_Polimorphism;
 
-public  class Inheritance_Review {
+public class Inheritance_Review {
     int a;
 
     public Inheritance_Review(int a) {
@@ -8,37 +8,42 @@ public  class Inheritance_Review {
     }
 }
 
-class A extends Inheritance_Review{
+class A extends Inheritance_Review {
 
     public A(int a) {
         super(a);
     }
 }
-class B extends Inheritance_Review{
+
+class B extends Inheritance_Review {
 
     public B(int a) {
         super(a);
     }
 }
 
-class C extends Inheritance_Review{
+// Thread process collection intro
+class C extends Inheritance_Review {
 
     public C(int a) {
         super(a);
     }
 }
-class aa extends A{
+
+class aa extends A {
     public aa(int a) {
         super(a);
     }
 }
-class Bb extends B{
+
+class Bb extends B {
     public Bb(int a) {
         super(a);
     }
 
 }
-class Cc extends C{
+
+class Cc extends C {
     public Cc(int a) {
         super(a);
     }
