@@ -1,10 +1,5 @@
 package day45_Abstraction_Interface.Shape;
-abstract class aa{
 
-}
-abstract class bb{
-
-}
 
 public class Circle extends Shape{
 
