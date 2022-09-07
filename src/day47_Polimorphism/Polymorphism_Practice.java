@@ -5,7 +5,7 @@ import day38_Inheritance.CarTask.Car;
 import day38_Inheritance.CarTask.Tesla;
 import day38_Inheritance.CarTask.Toyota;
 
-public class Polimorphism_Practice {
+public class Polymorphism_Practice {
     public static void main(String[] args) {
 
         Car[] cars={
@@ -26,6 +26,40 @@ public class Polimorphism_Practice {
                 new Tesla("Model X", 2014, 48000, "White", 236000),
         };
 
+        for (Car each : cars) {
+         if (each instanceof Toyota){
+             if (each.year>=2010&&each.year<=2011){
+                 System.out.println(each);
+             }
+         }
 
+         if (each instanceof  BMW){
+             System.out.println(each);
+         }
+
+
+         if (each instanceof Tesla){
+             if (each.year>=2015&&each.year<=2016){
+                 System.out.println(each);
+             }
+         }
+                 }
+
+        System.out.println("*************************************************************************");
+Car carWithHighestMileage=cars[0];
+        Car carWithLowestMileage=cars[0];
+        for (Car each: cars) {
+            if (each.miles>carWithHighestMileage.miles){
+                carWithHighestMileage=each;
+            }
+
+            if (each.miles<carWithLowestMileage.miles){
+                carWithLowestMileage=each;
+            }
+        }
+
+        System.out.println(carWithHighestMileage);
+
+        System.out.println(carWithLowestMileage);
     }
 }
