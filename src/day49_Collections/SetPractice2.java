@@ -1,5 +1,6 @@
 package day49_Collections;
 
+import java.sql.PreparedStatement;
 import java.util.*;
 
 public class SetPractice2 {
@@ -30,7 +31,7 @@ public class SetPractice2 {
         Set<String> s=new LinkedHashSet<>();
         s.addAll(Arrays.asList(array));
 
-        System.out.println("---------------------------");
+//        System.out.println("---------------------------");
         Integer[] nums = {1,2,1,1,2,2,2,3,3,3,3,2,3,4,5,1,2,3,4,5,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10};
 
       nums=  new LinkedHashSet<>(Arrays.asList(nums)).toArray(new Integer[0]);
@@ -39,7 +40,35 @@ public class SetPractice2 {
 
         System.out.println("---------------------------");
 
-        String str = "eeeeeaaaabbbbccccdddeeeee";
+        String str = "eeeeeaaaabbbbccccddd";
+        String result="";
+        for (String each : new LinkedHashSet<>(Arrays.asList(str.split("")))) {
+          result+=each+Collections.frequency( Arrays.asList(str.split("")),each);
+
+
+
+        }
+
+        System.out.println(result);
+
+        System.out.println("------------------------");
+
+        Set<String> names=new LinkedHashSet<>();
+
+        names.addAll(Arrays.asList("Ahmet", "Ahmet", "John", "James", "Breanna", "Shay", "Ahmet"));
+
+        System.out.println(names.toArray(new String[0])[2]);
+
+        System.out.println(new ArrayList<>(names).get(4));
+
+        for (String each : names) {
+            int a=0;
+            System.out.println(each);
+a++;
+if (a==1){
+    break;
+}
+        }
 
     }
 }

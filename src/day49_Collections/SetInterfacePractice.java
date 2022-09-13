@@ -47,5 +47,6 @@ public class SetInterfacePractice {
         treeSet1.addAll(Arrays.asList(null,null,null,null));
 
         System.out.println("treeSet1 = " + treeSet1);
+
     }
 }
