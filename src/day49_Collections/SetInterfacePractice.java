@@ -29,8 +29,23 @@ public class SetInterfacePractice {
 
 
         Set<Integer> linkedHashSet1=new LinkedHashSet<>();
+        linkedHashSet1.addAll(Arrays.asList(10,200,300,40,90));
+        linkedHashSet1.addAll(Arrays.asList(10,200,300,40,90));
+        linkedHashSet1.addAll(Arrays.asList(10,200,300,40,90));
+        linkedHashSet1.addAll(Arrays.asList(10,200,300,40,90));
+        linkedHashSet1.addAll(Arrays.asList(10,200,300,40,90));
+        linkedHashSet1.addAll(Arrays.asList(null,null,null,null));
+
+        System.out.println("linkedHashSet1 = " + linkedHashSet1);
 
         Set<Integer> treeSet1=new TreeSet<>();
+        treeSet1.addAll(Arrays.asList(10,200,300,40,90));
+        treeSet1.addAll(Arrays.asList(10,200,300,40,90));
+        treeSet1.addAll(Arrays.asList(10,200,300,40,90));
+        treeSet1.addAll(Arrays.asList(10,200,300,40,90));
+        treeSet1.addAll(Arrays.asList(10,200,300,40,90));
+        treeSet1.addAll(Arrays.asList(null,null,null,null));
 
+        System.out.println("treeSet1 = " + treeSet1);
     }
 }
