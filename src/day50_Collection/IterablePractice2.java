@@ -24,7 +24,7 @@ public class IterablePractice2 {
 
   */
 
-        Iterator<String> i= names.iterator();
+      /*  Iterator<String> i= names.iterator();
         while (i.hasNext()){
             if (i.next().equalsIgnoreCase("ahmed")){
                 i.remove();
@@ -32,6 +32,23 @@ public class IterablePractice2 {
         }
         System.out.println(names);
 
+       */
+
+       /* for (Iterator<String> i= names.iterator();i.hasNext();){
+            if (i.next().equalsIgnoreCase("ahmed")){
+                i.remove();
+            }
+        }
+
+        System.out.println(names);
+
+
+       */
+
+        names.removeIf(each-> each.equalsIgnoreCase("ahmed"));
+
+        System.out.println(names);
 
     }
+
 }
