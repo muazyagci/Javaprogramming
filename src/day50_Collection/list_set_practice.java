@@ -14,19 +14,46 @@ public class list_set_practice {
 
         System.out.println(list);
 
-        List<String> names=null;
+        // List<String> names=null;
 
         System.out.println("---------------------");
 
-        List<Character> chars=new Stack<>();
+        List<Character> chars = new Stack<>();
 
-        chars.addAll(Arrays.asList('A','B','C','D'));
+        chars.addAll(Arrays.asList('A', 'B', 'C', 'D'));
+
+        System.out.println("chars = " + chars);
+
+        ((Stack) chars).pop();
 
         System.out.println("chars = " + chars);
 
-        ((Stack)chars).pop();
+        List<String> names = new LinkedList<>();
 
-        System.out.println("chars = " + chars);
+        names.addAll(Arrays.asList("James", "Jimmy", "Kathy", "Breanna", "Max"));
+
+        System.out.println("names = " + names);
+
+        ((LinkedList<String>) names).poll();
+
+        System.out.println("names = " + names);
+
+        ((LinkedList<String>) names).poll();
+
+        System.out.println("names = " + names);
+
+        ((LinkedList<String>) names).poll();
+
+        System.out.println("names = " + names);
+
+        ((LinkedList<String>) names).poll();
+
+        System.out.println("names = " + names);
+
+//        ((LinkedList<String>) names).poll();
+//
+//        System.out.println("names = " + names);
+
 
 
 
