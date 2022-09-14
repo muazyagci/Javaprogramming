@@ -16,6 +16,18 @@ public class list_set_practice {
 
         List<String> names=null;
 
+        System.out.println("---------------------");
+
+        List<Character> chars=new Stack<>();
+
+        chars.addAll(Arrays.asList('A','B','C','D'));
+
+        System.out.println("chars = " + chars);
+
+        ((Stack)chars).pop();
+
+        System.out.println("chars = " + chars);
+
 
 
     }
