@@ -2,6 +2,7 @@ package day51_map;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 
 public class MapMethods {
@@ -41,7 +42,26 @@ public class MapMethods {
 
         System.out.println(students.isEmpty());
 
+        System.out.println("----------------------------------");
+
+        Map<String,Integer> map1=new HashMap<>();
+        map1.putAll(students);
+        System.out.println("map1 = " + map1);
+
+        Map<String,Integer> map2=new HashMap<>();
+        map2.putAll(students);
+        System.out.println("map2 = " + map2);
+
+        System.out.println(map1==map2);
+        System.out.println(map1.equals(map2));
+
+        map1.clear();
+        map2.clear();
+
+        System.out.println(map1);
+        System.out.println(map2);
 
 
+        //Map<Integer, List<String>>
     }
 }
