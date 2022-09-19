@@ -24,6 +24,13 @@ public class TestEnum {
             default:
 
         }
+        System.out.println("-------------------------");
+
+        Seasons seasons=Seasons.WINTER;
+
+
+
+
 
     }
 }
