@@ -63,12 +63,34 @@ int minSalary= Collections.min(map.values());
 
         }
         System.out.println("----------------------");
-
+        System.out.println("Employyes making between 120000 and 150000");
+        int count=0;
         for (Map.Entry<String, Integer> each : map.entrySet()) {
             if (each.getValue()>=120000&&each.getValue()<=150000){
+                count++;
                 System.out.println(each.getKey());
             }
         }
+        System.out.println(count);
+        System.out.println("--------------------------");
+        System.out.println("Employees making under 118000");
+int count2=0;
+        for (Map.Entry<String, Integer> each : map.entrySet()) {
+            if (each.getValue()<=118000){
+                System.out.println(each.getKey());
+                count2++;
+            }
+        }
+        System.out.println(count2);
+        System.out.println("------------------------");
+        for (Map.Entry<String, Integer> each : map.entrySet()) {
+            if (each.getValue()<=120000){
+                each.setValue(each.getValue()+10000);
+
+            }
+        }
+
+
 
     }
 }
