@@ -62,5 +62,13 @@ int minSalary= Collections.min(map.values());
             }
 
         }
+        System.out.println("----------------------");
+
+        for (Map.Entry<String, Integer> each : map.entrySet()) {
+            if (each.getValue()>=120000&&each.getValue()<=150000){
+                System.out.println(each.getKey());
+            }
+        }
+
     }
 }
