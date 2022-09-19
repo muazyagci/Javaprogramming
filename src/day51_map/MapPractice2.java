@@ -1,5 +1,6 @@
 package day51_map;
 
+import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -41,5 +42,25 @@ public class MapPractice2 {
 
         System.out.println(name1+" has max salary: "+maxSalary);
 
+String name2="";
+
+int minSalary= Collections.min(map.values());
+
+      /*  for (Map.Entry<String, Integer> each : map.entrySet()) {
+            if (each.getValue()<minSalary){
+                minSalary= each.getValue();
+                name2=each.getKey();
+            }
+        }
+
+       */
+
+        for (Map.Entry<String, Integer> each : map.entrySet()) {
+
+            if (each.getValue()==minSalary){
+                name2=each.getKey();
+            }
+
+        }
     }
 }
