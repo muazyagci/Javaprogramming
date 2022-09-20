@@ -14,6 +14,7 @@ public class FrequencyOfCharacters {
             frequency.put(each,frequency2);
         }
 
+
         System.out.println(frequency);
 
     }
